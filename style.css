@@ -47,7 +47,8 @@
     max-height: 40px;
     top: 176px;
     left: 16px;
-    /* overflow-x: auto;   скролл */
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
     white-space: nowrap;
 
 }
@@ -61,18 +62,22 @@
     font-family: normal;
     font-size: 16px;
     align-items: center;
+    scroll-snap-align: start;
+}
 
+.btn:active {
+    background-color: rgb(194, 253, 253);
 }
 
 .first {
     border: 1px solid rgb(126, 225, 243);
 }
 
-
- /* без скролла в хроме*/
-/* .main__scroll::-webkit-scrollbar {
+/* убрать скролл в хроме
+.main__scroll::-webkit-scrollbar {
     display: none;
 } */
+
 
 
 .text {
