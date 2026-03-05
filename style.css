@@ -22,15 +22,29 @@
 /* main */
 
 .main {
-    width: 320px;
+    max-width: 430px;
     min-height: 597px;
     background-color: rgba(248, 248, 248, 1);
     overflow: hidden;
+    padding: 16px;
 
 }
 
-.main__menu {
+@media (min-width: 780px) {
+    .main {
+        padding: 24px;
+    }
+}
 
+@media (min-width: 1024px) {
+    .main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.main__menu {
+width: 100%;
 }
 
 .main__title {
@@ -108,4 +122,8 @@
 
 .under {
     margin: 10px 0;
+}
+
+.under__img {
+width: 100%;
 }
