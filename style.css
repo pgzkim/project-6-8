@@ -69,6 +69,10 @@
     margin-left: 10px;
 }
 
+.desktop-btns {
+    display: none;
+}
+
 /* убрать скролл в хроме
 .main__scroll::-webkit-scrollbar {
     display: none;
@@ -80,6 +84,10 @@
 }
 
 .invisible__text {
+    display: none;
+}
+
+.desktop-btns {
     display: none;
 }
 
@@ -133,6 +141,7 @@
 
 .bottom {
     flex: 1;
+    padding-right: 20px;
 }
 
 .bottom__img {
@@ -144,10 +153,42 @@
 
 /* десктоп */
 @media (min-width: 1024px) {
-
+.header__second-img {
+    display: none;
+}
 
 .invisible__text {
     display: block;
 }
     
+.desktop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.desktop-btns {
+    display: flex;
+    padding-right: 20px;
+}
+
+.btn__desktop-btn {
+    display: flex;
+    margin-right: 10px;
+    font-family: medium;
+    align-items: center;
+    gap: 10px;
+}
+
+.services {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.item {
+    width: 100%;
+}
+
+.bottom {
+    padding-right: 20px;
+}
 }
